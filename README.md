@@ -45,7 +45,7 @@ check whether any of these dependencies are not present.
 - java compiler
 
 ### Building
-In the root directory of the repo, execute:
+In the `src` directory of the repo, execute:
 ```
 $ make
 ```
