@@ -11,8 +11,5 @@ public class Main {
 
 		b.updateMissingBlobs();
 		b.showMissingBlobs();
-
-		System.out.println();
-		System.out.println("Done.");
 	}
 }

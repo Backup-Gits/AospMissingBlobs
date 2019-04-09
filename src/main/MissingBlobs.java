@@ -32,7 +32,7 @@ public class MissingBlobs {
 		StringBuilder expanded = new StringBuilder();
 
 		for (Blob blob : arr) {
-			expanded.append(blob.getName() + "; ");
+			expanded.append(" " + blob.getName());
 		}
 
 		return expanded.toString();
@@ -121,7 +121,7 @@ public class MissingBlobs {
 	public void showMissingBlobs() {
 		for (String dependencyName : missingBlobs) {
 			ArrayList<Blob> blobsWithDependencies = dependencyBlobs.get(dependencyName);
-			System.out.println(dependencyName + " required by: " + expandArrayList(blobsWithDependencies));
+			System.out.println(dependencyName + ":" + expandArrayList(blobsWithDependencies));
 		}
 	}
 }
